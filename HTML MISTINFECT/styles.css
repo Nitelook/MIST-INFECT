@@ -152,6 +152,7 @@ body {
 	transition: 0.4s;
 }
 .Closing{
+	position: absolute;
 	text-align: center;
 	background: #700c18;
 	font-family: calibri;
