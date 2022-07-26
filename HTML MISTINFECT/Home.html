@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!---HEADER--->
+<div class="HeaderContainer">
+	<div class="HEADERTEXT">
+		<a href="Home.html"><p>MIST <span class="INFECT">INFECT</span></p></a>
+	</div>
+													<!---Navigation--->
+	<div class="NavigationContainer">
+		<div class="Navigation">
+			<a id="activated" href="Home.html">Home</a>
+			<a href="History.html">History</a>
+			<a href="Information.html">Information</a>
+			<a href="Aboutus.html">About Us</a>
+		</div>
+	</div>
+</div>
+
+														<!---Slideshow--->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="mist1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="mist2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="mist3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="mist4.png" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+	<span class="dot"></span>
+</div>
+
+<div class="Welcome-text">
+	<p>Your <span class="cost">cost efficient</span> solution</p><br>
+	<p>to <span class="disinfect">disinfect</span> your facilities</p><br>
+	<br>
+	<a href="Information.html">Learn more.</a>
+</div>
+<!---Footer--->
+<footer>
+	<div class="footer-container">
+		<div>Follow us on our socials!<br>
+		<a style="font-size: 30px;" href="#" class="fa fa-facebook"></a><a style="font-size: 30px;" href="#" class="fa fa-twitter"></a><a style="font-size: 30px;" href="#" class="fa fa-instagram"></a></div>
+		<div>Partner<br>
+		<a href="https://www.hau.edu.ph/">Holy Angel University</a></div>
+		<div>Navigation<br>
+		<a href="Home.html">Home</a><br> <a href="History.html">History</a><br> <a href="Information.html">Information</a><br> <a href="Aboutus.html">About Us</a> </div>
+		</div>
+	</div>
+	<div class="Closing">
+		<div class="closelogo">
+			<p>MIST <span class="INFECT">INFECT</span></p>
+		</div>
+		<p>Copyright © 2020 MIST INFECT</p>
+		<a href="#">Privacy Policy</a>&nbsp;&nbsp;<a href="#">Terms of use</a>
+
+	</div>
+</footer>
+</body>
+<!---JAVA SCRIPT FOR SLIDESHOW--->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+</html>

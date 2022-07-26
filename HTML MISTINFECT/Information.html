@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+	<!---HEADER--->
+<div class="HeaderContainer">
+	<div class="HEADERTEXT">
+		<a href="Home.html"><p>MIST <span class="INFECT">INFECT</span></p></a>
+	</div>
+													<!---Navigation--->
+	<div class="NavigationContainer">
+		<div class="Navigation">
+			<a href="Home.html">Home</a>
+			<a href="History.html">History</a>
+			<a id="activated" href="Information.html">Information</a>
+			<a href="Aboutus.html">About Us</a>
+		</div>
+	</div>
+</div>
+<!---Content--->
+<div class="contentcontainer">
+	<div class="contentheader">
+		<p>What is the MIST <span class="INFECT">INFECT</span>?</p>
+	</div>
+	<hr class="divider1">
+	<div class="contenthistory">
+		<p><h3>FUNCTION</h3>
+			One of the most important components of a Mist Infect is the misting nozzle. When attached to a high-pressure liquid pump unit, the disinfectant is forced through nozzles, forming droplets that evaporate into mist when they reach the outdoor air. The PVC pipes and elbow pipes are used for the passage of the disinfectant from its storage. Using a PVC primer, the main components of Mist Infect can be glued across the room. The control panel and manual operating box are used for the control and adjustment of Mist Infect’s settings.<br><br>
+			<h3>BENEFITS</h3>
+			Mist Infect uses lavender and tea tree oil as its organic ingredients along with few amounts of chemical ingredients. The lavender and tea tree essential oils both have natural disinfecting properties. Tea tree oil is also antiviral and antifungal. It may help kill a number of germs responsible for colds, flu and other illness. Tea tree oil can be a bit strong on its own, but the lavender complements the oil's piney fragrance. Lavender can kill bacteria, fungi, viruses, and other sources of infections. The disinfectant is safe to use around people. With its essential oil blends, it truly makes our product essential among others. If we use mist infect as a
+			disinfectant, then its high coverage disinfectant will be effective. Because environmental services professionals are focused on providing a safe environment of care. To accomplish this in a coeffective manner, they need to find a disinfectant that are broad spectrum, fast acting, stay wet for the required dwell time, and are safe and easy to use. Effectiveness is critical to reducing the risk of infection, but appropriate care must be taken to protect surfaces and equipment from damage.
+		</p><br>
+		<h3>Gallery</h3>
+	</div>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="mist1.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="mist2.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="mist3.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="mist4.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+</div>
+</div>
+<!---Footer--->
+<footer>
+	<div class="footer-container">
+		<div>Follow us on our socials!<br>
+		<a style="font-size: 30px;" href="#" class="fa fa-facebook"></a><a style="font-size: 30px;" href="#" class="fa fa-twitter"></a><a style="font-size: 30px;" href="#" class="fa fa-instagram"></a></div>
+		<div>Partner<br>
+		<a href="https://www.hau.edu.ph/">Holy Angel University</a></div>
+		<div>Navigation<br>
+		<a href="Home.html">Home</a><br> <a href="History.html">History</a><br> <a href="Information.html">Information</a><br> <a href="Aboutus.html">About Us</a> </div>
+		</div>
+	</div>
+	<div class="Closing">
+		<div class="closelogo">
+			<p>MIST <span class="INFECT">INFECT</span></p>
+		</div>
+		<p>Copyright © 2020 MIST INFECT</p>
+		<a href="#">Privacy Policy</a>&nbsp;&nbsp;<a href="#">Terms of use</a>
+
+	</div>
+</footer>
+
+</body>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</html>
